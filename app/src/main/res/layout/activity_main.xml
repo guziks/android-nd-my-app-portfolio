@@ -1,11 +1,13 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
     android:background="@color/main_bg">
 
     <TextView android:text="@string/title"
@@ -13,15 +15,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="24sp"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:paddingBottom="20dp"/>
 
     <Button android:text="@string/app_name_spotify_streamer"
         android:id="@+id/spotifyAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/titleTextViewiew"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="spotifyButtonAction"/>
@@ -30,8 +31,7 @@
         android:id="@+id/scoresAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/spotifyAppButton"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="scoresButtonAction"/>
@@ -40,8 +40,7 @@
         android:id="@+id/libraryAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/scoresAppButton"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="libraryButtonAction"/>
@@ -50,8 +49,7 @@
         android:id="@+id/bibAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/libraryAppButton"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="bibButtonAction"/>
@@ -60,8 +58,7 @@
         android:id="@+id/xyzAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/bibAppButton"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="xyzButtonAction"/>
@@ -70,10 +67,9 @@
         android:id="@+id/capstoneAppButton"
         android:layout_width="250dp"
         android:layout_height="60dp"
-        android:layout_below="@id/xyzAppButton"
-        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
         android:background="@color/capstone_button_bg"
         android:layout_marginBottom="10dp"
         android:onClick="capstoneButtonAction"/>
 
-</RelativeLayout>
+</LinearLayout>
