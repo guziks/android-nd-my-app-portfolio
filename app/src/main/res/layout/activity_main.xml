@@ -23,7 +23,8 @@
         android:layout_below="@id/titleTextViewiew"
         android:layout_centerHorizontal="true"
         android:background="@color/button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="spotifyButtonAction"/>
 
     <Button android:text="@string/app_name_scores"
         android:id="@+id/scoresAppButton"
@@ -32,7 +33,8 @@
         android:layout_below="@id/spotifyAppButton"
         android:layout_centerHorizontal="true"
         android:background="@color/button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="scoresButtonAction"/>
 
     <Button android:text="@string/app_name_library"
         android:id="@+id/libraryAppButton"
@@ -41,7 +43,8 @@
         android:layout_below="@id/scoresAppButton"
         android:layout_centerHorizontal="true"
         android:background="@color/button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="libraryButtonAction"/>
 
     <Button android:text="@string/app_name_build_it_bigger"
         android:id="@+id/bibAppButton"
@@ -50,7 +53,8 @@
         android:layout_below="@id/libraryAppButton"
         android:layout_centerHorizontal="true"
         android:background="@color/button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="bibButtonAction"/>
 
     <Button android:text="@string/app_name_xyz_reader"
         android:id="@+id/xyzAppButton"
@@ -59,7 +63,8 @@
         android:layout_below="@id/bibAppButton"
         android:layout_centerHorizontal="true"
         android:background="@color/button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="xyzButtonAction"/>
 
     <Button android:text="@string/app_name_capstone"
         android:id="@+id/capstoneAppButton"
@@ -68,6 +73,7 @@
         android:layout_below="@id/xyzAppButton"
         android:layout_centerHorizontal="true"
         android:background="@color/capstone_button_bg"
-        android:layout_marginBottom="10dp"/>
+        android:layout_marginBottom="10dp"
+        android:onClick="capstoneButtonAction"/>
 
 </RelativeLayout>
